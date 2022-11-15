@@ -66,7 +66,7 @@ io.on('connection', async (socket) => {
   console.log(`${countUsers} users connected`);
   io.emit('userNumber', `user_num: ${countUsers}`);
 
-  console.log('EOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO', await ctrls.getHistory(client);
+  console.log('EOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO', await ctrls.getHistory(client));
   io.emit('getHistory', await ctrls.getHistory(client)); 
   // try {
   //   const players = await ctrls.getTickets( client ) || [];
